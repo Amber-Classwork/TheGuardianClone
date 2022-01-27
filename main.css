@@ -514,6 +514,13 @@ body {
 .span-col-4 {
   grid-column: 1 / span 4;
 }
+.grid-start-2 {
+  grid-column-start: 2;
+}
+
+.grid-start-3 {
+  grid-column-start: 3;
+}
 .sport {
   display: flex;
 }

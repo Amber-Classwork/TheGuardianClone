@@ -342,8 +342,7 @@ li a {
 
 /* Aldaine Section*/
 
-body {
-  /* padding: */
+/* body {
   margin: 0;
 }
 
@@ -846,3 +845,787 @@ body {
 .grid-start-3 {
   grid-column-start: 3;
 }
+*/
+/* TM */
+body {
+  /* padding: */
+  margin: 0;
+}
+
+.news-section {
+  background-color: white;
+}
+
+.news-section__article {
+  display: flex;
+  overflow: hidden;
+  padding-left: 0.4rem;
+}
+
+.article__headline {
+  display: flex;
+  width: 12rem;
+  margin-right: 1.2rem;
+  flex-direction: column;
+}
+
+.weather {
+}
+
+.weather h3 {
+  margin-top: 2rem;
+}
+
+.weather .city-input {
+  color: rgba(119, 119, 119, 0.651);
+  font-size: 14px;
+}
+
+.weather .city-input input {
+  border: none;
+  border-bottom: 1px solid #777;
+  margin-top: 2rem;
+  padding-bottom: 5px;
+  margin-right: 2rem;
+}
+
+.weather-now {
+  margin-top: 0.8rem;
+  display: flex;
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+}
+.weather .temp {
+  margin-left: 0.5rem;
+  margin-top: -0.9rem;
+}
+
+.weather .temp small {
+  font-size: 12px;
+}
+
+.weather .temp p {
+  font-size: 23px;
+}
+
+.broadcast {
+  display: flex;
+}
+
+.broadcast .cast1 {
+  padding: 2.5px;
+}
+
+.view-forcast span svg {
+  color: white;
+}
+.view-forcast {
+  margin-top: 1.5rem;
+}
+
+.allstories {
+  margin-top: 30rem;
+  padding-left: 0.5rem;
+}
+
+.article__headline h2 {
+  font-size: 25px;
+  margin-bottom: 1.5rem;
+}
+
+.article__sub_headline h3 {
+  font-size: 16px;
+}
+
+.article__sub_headline p:nth-child(1) {
+  font-size: 16px;
+  margin-top: 0.9rem;
+}
+
+.article__sub_headline span:nth-child(1) {
+  color: red;
+}
+
+.article_image {
+  margin-left: 9rem;
+}
+
+.article__img__con img {
+  width: 30rem;
+  height: 16rem;
+}
+
+.news-section__image {
+  overflow: hidden;
+}
+.news-section__aside .news-section__content {
+  padding-left: 0.4rem;
+}
+
+.news-section__aside .news-section__content h2 {
+  font-size: 18px;
+  width: 9rem;
+  height: 9rem;
+}
+
+.news-section__item .news-section__article2 {
+  height: 37rem;
+}
+.news-section__aside .news-section__image img {
+  width: 15rem;
+}
+.news-section__article2 .news-section__image {
+  overflow: hidden;
+}
+.news-section__article2 .news-section__image img {
+  width: 27rem;
+  height: 15rem;
+}
+
+.news-section__article2 .news-section__content2 {
+  padding-left: 0.4rem;
+}
+.news-section__article2 .news-section__content2 h2 {
+  margin-bottom: 4rem;
+}
+
+.news-section__across {
+  display: flex;
+  margin-top: 1.5rem;
+  padding-left: 0.4rem;
+}
+
+.news-section__across p {
+  width: 120px;
+  padding-right: 10px;
+}
+
+.news__content {
+  padding-left: 0.4rem;
+}
+.news-section__down {
+  display: flex;
+  flex-direction: column;
+}
+
+.news-section__down .news1 {
+  margin-bottom: 0.5rem;
+  height: 18rem;
+}
+
+.news-section__down .news2 {
+  margin-bottom: 0.5rem;
+  border-top: 1px solid red;
+  height: 9rem;
+}
+
+.news-section__down .news1 img {
+  width: 13rem;
+}
+
+.news-section__aside2 .news-section__content {
+  padding-left: 0.4rem;
+  padding: 5px;
+  margin-bottom: 0.5rem;
+}
+
+.news-section__aside2 .news-section__content h2 {
+  height: 5rem;
+  margin-bottom: 1.3rem;
+  font-size: 18px;
+}
+
+/* Spotlight */
+
+.news-section__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.news-section__column .news-section__flex {
+  display: flex;
+  margin-bottom: 0.4rem;
+  height: 7.3rem;
+}
+
+.column-image img {
+  width: 12rem;
+}
+
+.news-section__column .column-text {
+  position: relative;
+}
+
+.news-section__column .column-text h2 {
+  font-size: 18px;
+  margin-left: 0.8rem;
+  width: 12rem;
+}
+
+.news-section__item .news-section__slide {
+  height: 30.5rem;
+}
+.news-section__slide .down-image {
+  margin-bottom: 8rem;
+}
+
+.news-section__slide .down-image h2 {
+  font-size: 19px;
+}
+.news-section__slide .down-image img {
+  width: 13rem;
+}
+
+.news-section__slide .column-text-down {
+  position: relative;
+  width: 10rem;
+  font-size: 16px;
+}
+
+.news-virus .virus-head {
+  width: 30rem;
+  margin-bottom: 11rem;
+}
+
+.virus-head h2 {
+  margin-bottom: 0.4rem;
+}
+
+.virus-image {
+  background-image: url("images/covid.jpg");
+  background-position: center;
+  width: 41.5rem;
+  height: 25rem;
+  display: flex;
+}
+
+.virus-image div {
+  background-color: #05296283;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  width: 11.5rem;
+  margin-left: 1.2rem;
+  margin-top: 16rem;
+  height: 8rem;
+}
+
+.virus-image p {
+  color: white;
+}
+
+.virus-study {
+  display: flex;
+  flex-direction: column;
+}
+
+.virus-study .vac_image img {
+  width: 18rem;
+  height: 12rem;
+}
+
+.virus-study .vac {
+  background-color: #052962;
+  width: fit-content;
+}
+
+.virus-study .vac-text {
+  width: 10rem;
+  color: white;
+}
+
+.virus-study .sub-text {
+  margin-top: 2rem;
+  width: 10rem;
+  color: white;
+}
+
+.virus-study .science {
+  margin-top: 0.9rem;
+  background-color: #052962;
+  width: 18rem;
+}
+
+.virus-study .science h3 {
+  color: white;
+  width: 10rem;
+}
+
+.virus-study .bonus {
+  margin-top: 0.9rem;
+  background-color: #052962;
+  width: 18rem;
+}
+
+.virus-study .bonus h3 {
+  color: white;
+  width: 10rem;
+}
+
+/* opinion */
+.section__op-image img {
+  width: 27.3rem;
+  height: 14rem;
+}
+.section__op-image-add img {
+  width: 22rem;
+  height: 23rem;
+}
+
+.news-section__item .op-content2 {
+  height: 12rem;
+}
+
+.op-content h3 span {
+  /* margin-bottom: 9rem; */
+}
+.section__op-image2 img {
+  width: 13rem;
+  height: 8rem;
+}
+/* Sports */
+
+.news_sports .news_sports_image img {
+  width: 27.2rem;
+}
+
+.news_sports_txt {
+  padding-left: 0.4rem;
+}
+.news_sports_subtext {
+  padding-left: 0.4rem;
+  margin-top: 4rem;
+  display: flex;
+}
+
+.news-section__focus {
+  display: flex;
+  justify-content: space-between;
+}
+
+.article__focus__con img {
+  width: 20rem;
+  height: 16rem;
+}
+
+.news-section__focus .article__Focus h2 {
+  margin-left: 1.2rem;
+  color: white;
+}
+
+.article__Focus .sub {
+  margin-top: 12rem;
+  color: white;
+  font-size: 14px;
+}
+
+.article__Focus svg {
+  background-color: purple;
+  /* padding: 5px; */
+  border-radius: 10%;
+  margin-right: 0.5rem;
+}
+.article__Focus .sub span {
+  margin-left: 0.3rem;
+}
+
+.news-section__fcontent {
+  color: white;
+}
+
+.news-section__item .climate-crisis {
+  height: 31.2rem;
+}
+.climate-crisis .crisis-image img {
+  width: 13rem;
+}
+
+.climate-crisis .climate-text {
+  width: 9rem;
+  margin-bottom: 1.2rem;
+  padding-left: 0.4rem;
+}
+
+.crisis-column .climate-text {
+  margin-bottom: 0.6rem;
+  padding-bottom: 4rem;
+  height: 10rem;
+  padding-left: 0.4rem;
+}
+
+.masterclass {
+  display: flex;
+  justify-content: space-around;
+}
+
+.welcome-course {
+  background-color: #f4bc44;
+  width: 13.4rem;
+  position: absolute;
+  left: -0.6rem;
+  margin-top: 38.1rem;
+  padding: 10px;
+  height: 16.6rem;
+}
+
+.welcome-course svg {
+  margin-bottom: 2rem;
+}
+
+.welcome-course p {
+  background-color: white;
+  width: fit-content;
+  margin-bottom: 2rem;
+}
+
+.welcome-course button {
+  border-radius: 4rem;
+  border: none;
+  outline: none;
+  width: 12rem;
+  padding: 8px;
+  background-color: #fff;
+  color: black;
+}
+
+.welcome-course i {
+  margin-left: 6rem;
+}
+.course_img img {
+  width: 16rem;
+}
+
+.course-text p {
+  font-size: 16px;
+}
+
+.course-text button {
+  background-color: #f4bc44;
+  border: none;
+  padding: 8px;
+  margin-top: 1.1rem;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.course-text button i {
+  padding-left: 0.8rem;
+}
+
+.masterclass .mass_text input {
+  margin-top: 3rem;
+  border-radius: 15rem;
+}
+.news-section__aside .news-section__pic-content h2 {
+  font-size: 18px;
+  color: white;
+  height: 6rem;
+}
+.article__pic-headline {
+  color: white;
+}
+
+.camera svg {
+  margin-left: 0.2rem;
+}
+
+.news-section .video_slide__images {
+  display: flex;
+}
+
+.news-section .video_slide .fa-chevron-left {
+  background-color: rgba(26, 25, 23, 0.575);
+  padding: 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  top: 18rem;
+  left: 2rem;
+  z-index: 1000;
+}
+
+.news-section .video_slide .fa-chevron-left:hover {
+  background-color: rgb(255, 229, 0);
+  transition: 0.3s;
+}
+
+.news-section .video_slide .fa-chevron-right {
+  background-color: rgba(26, 25, 23, 0.575);
+  padding: 14px;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  top: -16rem;
+  left: 52rem;
+  z-index: 1000;
+}
+
+.news-section .video_slide .fa-chevron-right:hover {
+  background-color: rgb(255, 229, 0);
+  transition: 0.3s;
+}
+.news-section .video_slide .video_slide__images img {
+}
+
+.news-section > .content {
+  border: 1px solid var(--muted-grey);
+  border-top: none;
+  display: grid;
+  grid-template-columns: 2fr 9fr 1fr;
+  width: 1240px;
+  padding: 0 10px;
+  margin: auto;
+}
+.news-section__body {
+  padding: 10px 0;
+  display: grid;
+  gap: 10px;
+}
+.news-section__slice:first-child {
+  padding-right: 0;
+}
+.news-section__head.vertical-rule {
+  /* overflow: hidden; */
+  position: relative;
+  font-size: 1.1em;
+}
+.news-section__head.vertical-rule::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  border-right: 1px solid var(--muted-grey);
+  right: 0;
+  top: 0;
+}
+
+/* Define each row of the news section, works in conjunction with the grid- utility classes*/
+.news-section__row {
+  display: grid;
+}
+.news-section__item {
+  overflow: hidden;
+  padding: 0 10px;
+  position: relative;
+}
+/* Each Individual news report */
+.ns-item__container {
+  position: relative;
+}
+.ns-item__container::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  border-top: 1px solid red;
+  z-index: 3;
+}
+.ns-item__media {
+}
+.ns-item__content {
+}
+.news-section__item::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  border-right: 1px solid var(--muted-grey);
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+/* Gives the line separator to the right of the row item */
+.news-section__row .news-section__item:last-child:after {
+  display: none;
+}
+.news-section__hide p {
+  margin: 0;
+  text-align: end;
+  color: grey;
+}
+.news-section__hide:hover p {
+  color: black;
+}
+.news-section__head h2 {
+  margin: 0 auto;
+  color: #121212;
+}
+.news-section__head a {
+  text-decoration: none #121212;
+}
+.news-section__head:hover {
+}
+
+.line-separator {
+  position: relative;
+  border: 1px solid var(--muted-grey);
+  border-bottom: 0;
+  border-top: 0;
+}
+.line-separator::after {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    #dcdcdc,
+    #dcdcdc 0.0625rem,
+    transparent 0.0625rem,
+    transparent 0.25rem
+  );
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-size: 0.0625rem 0.8125rem;
+  background-color: #ffffff;
+  content: "";
+  display: block;
+  height: 0.8125rem;
+  width: 100%;
+}
+
+.show {
+  display: flex;
+  margin-left: 10px;
+  border-radius: 50px;
+  border: 1px solid #121212;
+  align-items: center;
+  background-color: #121212;
+  color: white;
+  gap: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+.show .btn-text {
+  font-weight: bold;
+}
+
+/* UTILITIES */
+
+.red {
+  background-color: red;
+  height: 300px;
+  width: 100%;
+}
+.green {
+  background-color: green;
+  height: 300px;
+  width: 100%;
+}
+.blue {
+  background-color: blue;
+  height: 300px;
+  width: 100%;
+}
+.orange {
+  background-color: orange;
+  height: 300px;
+  width: 100%;
+}
+
+.high-blue {
+  color: rgb(0, 110, 255);
+}
+
+.high-red {
+  color: red;
+}
+
+.high-pink {
+  color: pink;
+}
+
+.high-purple {
+  color: purple;
+}
+
+.high-gold {
+  color: goldenrod;
+}
+.high-orange {
+  color: #e05e00;
+}
+
+.bor-gold {
+  border-top: 1px solid goldenrod;
+}
+
+.bor-red {
+  border-top: 1px solid red;
+}
+
+.bor-grey {
+  border-top: 1px solid rgb(168, 166, 166);
+}
+
+.bor-grey2 {
+  border-right: 1px solid rgb(168, 166, 166);
+}
+
+.bor-grey3 {
+  border-left: 1px solid rgb(168, 166, 166);
+}
+.bor-pink {
+  border-top: 1px solid pink;
+}
+
+.bor-purple {
+  border-top: 1px solid purple;
+}
+
+.bor-orange {
+  border-top: 1px solid orange;
+}
+
+.bor-blue {
+  border-top: 1px solid rgb(0, 110, 255);
+}
+
+.virus {
+  background-color: rgba(214, 210, 210, 0.404);
+  height: 100%;
+  width: 100%;
+}
+
+.op-news {
+  background-color: rgba(248, 232, 211, 0.308);
+  height: 100%;
+  width: 100%;
+}
+
+.pod {
+  background-color: #121212;
+  height: 100%;
+  width: 100%;
+}
+
+.newspaper {
+  background-color: rgba(214, 210, 210, 0.308);
+  height: 100%;
+  width: 100%;
+}
+
+/* Tells the amount of columns each row should have */
+.col-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.col-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.col-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Tells the grid that the item it is attached to must span the amount of column specified */
+.span-col-2 {
+  grid-column: 1 / span 2; /* or grid-column: 1/ span 2*/
+}
+.span-col-3 {
+  grid-column: 1 / span 3;
+}
+.span-col-4 {
+  grid-column: 1 / span 4;
+}
+.grid-start-2 {
+  grid-column-start: 2;
+}
+
+.grid-start-3 {
+  grid-column-start: 3;
+}
+
+/* END TM */
