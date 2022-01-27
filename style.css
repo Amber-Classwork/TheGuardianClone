@@ -1,0 +1,848 @@
+:root {
+  --muted-grey: #dcdcdc;
+  --font-color: white;
+  --news: #ff4e36;
+  --sports: #00b2ff;
+  --culture: #eacca0;
+  --lifestyle: #ffabdb;
+}
+* {
+  text-decoration: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: all linear;
+  scroll-behavior: smooth;
+  list-style-type: none;
+  border-collapse: collapse;
+}
+
+header {
+  background-color: #052962;
+}
+.head {
+  display: flex;
+  padding-left: 1rem;
+  padding-top: 8px;
+  width: 85%;
+  justify-content: space-between;
+  margin: auto;
+}
+/* Support the Gaurdian Title and sub description */
+.head__caption {
+  color: rgb(255, 229, 0);
+  font-size: 36px;
+  margin-bottom: 0.3rem;
+}
+
+.head__caption2 {
+  color: #ffff;
+  margin-bottom: 0.8rem;
+  font-size: 18px;
+}
+
+/* End*/
+
+/* Contribue and Subscribe link */
+.head__link {
+  background-color: rgb(255, 229, 0);
+  border-radius: 0.8rem;
+  padding: 8px;
+  margin-right: 0.4rem;
+}
+.head__link .fa-arrow-right {
+  margin-left: 0.4rem;
+  border: none;
+}
+
+.head__link2 {
+  background-color: rgb(255, 229, 0);
+  border-radius: 0.4rem;
+  padding: 5px;
+  margin-right: 0.4rem;
+}
+.head__link a {
+  color: black;
+}
+
+.head__link i {
+  color: #052962;
+}
+
+/* End */
+
+/* Search jobs Sign in etc.... */
+.head__list {
+  position: relative;
+  justify-self: flex-end;
+  flex-grow: 1;
+  text-align: right;
+}
+.head__list__adjust {
+  padding-right: 8rem;
+}
+
+.head__list {
+  font-size: 18px;
+  padding-left: 7.5rem;
+  z-index: 1072;
+}
+.head__list span {
+  color: white;
+  margin-left: 0.9rem;
+}
+
+.head__list span:hover {
+  color: rgb(255, 229, 0);
+}
+
+.head__list span a {
+  color: white;
+  margin-left: 0.9rem;
+}
+
+.head__list span i {
+  font-size: 1rem;
+  margin-right: 0.2rem;
+  margin-left: 0.4rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.555);
+  padding-left: 5px;
+}
+
+.head__list span:hover a {
+  color: rgb(255, 229, 0);
+}
+
+.head__list span:hover .fa-chevron-down {
+  color: rgb(255, 229, 0);
+  transform: translateY(3px);
+  transition: 0.5s;
+}
+
+.head__list span .fa-chevron-down {
+  font-size: 12px;
+  margin-left: 0.2rem;
+  border: none;
+}
+
+.head__list__int {
+  border-left: 1px solid rgba(255, 255, 255, 0.603);
+}
+
+/* end */
+
+/*search modal pop up */
+.head__search {
+  position: absolute;
+  background-color: #ffff;
+  padding: 20px;
+  right: 21rem;
+  width: fit-content;
+  z-index: 10000;
+}
+
+.head__search input {
+  padding: 8px;
+  padding-left: 1.8rem;
+  width: 26rem;
+  border-radius: 0.8rem;
+  outline: none;
+  border: 1px solid #777;
+}
+.head__search .fa-search {
+  color: #052962;
+  position: relative;
+  left: 1.3rem;
+}
+/* End */
+
+/* svg */
+.head__logo svg {
+  width: 290px;
+  position: absolute;
+  right: 15rem;
+  z-index: 7;
+}
+/* end */
+
+/* News Sport Opninon.... */
+.head__navbar {
+  margin-top: 2rem;
+}
+
+.head__navbar table {
+  margin: auto;
+  width: 85%;
+  table-layout: fixed;
+}
+.lower-table tbody th {
+  width: 3rem;
+}
+
+.head__navbar thead th {
+  position: relative;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding-bottom: 0.4rem;
+  border: 1px solid rgba(255, 255, 255, 0.377);
+  border-bottom: none;
+  text-align: start;
+}
+.head__navbar thead th:nth-child(6) {
+  font-weight: 300;
+}
+
+.head__navbar thead th:not(:last-of-type)::before {
+  content: "";
+  width: 100%;
+  height: 0px;
+  background: rgb(255, 229, 0);
+  transition: 0.2s ease-in-out;
+  position: absolute;
+  inset: 0;
+}
+.head__navbar thead th:hover:before,
+.head__navbar thead th.active::before {
+  height: 4px;
+}
+.head__navbar thead th:nth-child(1)::before {
+  background-color: var(--news);
+}
+.head__navbar thead th:nth-child(2)::before {
+  background-color: var(--accent);
+}
+.head__navbar thead th:nth-child(3)::before {
+  background-color: var(--sports);
+}
+.head__navbar thead th:nth-child(4)::before {
+  background-color: var(--culture);
+}
+.head__navbar thead th:nth-child(5)::before {
+  background-color: var(--lifestyle);
+}
+
+.head__navbar thead th a {
+  color: white;
+  display: block;
+  padding: 10px;
+}
+
+.head__navbar thead th:nth-child(6) a:hover {
+  color: rgb(255, 229, 0);
+}
+
+.head__navbar thead th a .fa-chevron-down {
+  color: white;
+  font-size: 15px;
+  margin-left: 0.3rem;
+}
+.head__navbar thead th a:hover .fa-chevron-down {
+  color: rgb(255, 229, 0);
+  /* transform: rotate(180deg); */
+  transform: rotateX(0.5turn);
+  transition: 0.5s;
+}
+
+.head__navbar tbody td a:hover {
+  color: rgb(255, 229, 0);
+}
+
+.head__navbar tbody td {
+  padding-bottom: 11px;
+  /* width: 11rem; */
+  border-left: 1px solid rgba(255, 255, 255, 0.377);
+  padding-left: 10px;
+}
+.head__navbar thead .side {
+  border-left-width: 0;
+}
+.head__navbar thead .side.addborder {
+  border-left-width: 1px;
+}
+
+.head__navbar thead .hside {
+  border-right-width: 0;
+}
+.head__navbar thead .hside.addborder {
+  border-right-width: 0;
+}
+.head__navbar thead .hside::before {
+  display: none;
+}
+
+.head__navbar tbody .side {
+  position: relative;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  top: -2.5rem;
+  border-right: none;
+  line-height: -2rem;
+  border-right: 1px solid rgba(255, 255, 255, 0.377);
+}
+
+.head__navbar tbody .side a {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.head__navbar tbody td a {
+  font-size: 1.3rem;
+  color: white;
+}
+
+/* end */
+
+/* Edition drop down */
+.head__drop {
+  position: absolute;
+  background-color: #ffff;
+  left: 38.5rem;
+  width: 12rem;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #121212;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.head__drop a:hover {
+  background-color: #ddd;
+}
+
+/* end */
+
+/* Word uk etc... */
+.head__subNav ul {
+  margin: auto;
+  width: 85%;
+  padding: 20px 10px;
+  border: 1px solid var(--muted-grey);
+  border-bottom: none;
+  border-top: none;
+}
+li {
+  display: inline;
+  font-size: 1.3em;
+  margin-right: 0.8rem;
+}
+.head__subNav a {
+  transition: 200ms linear color;
+}
+.head__subNav a:hover {
+  color: var(--accent);
+}
+
+li a {
+  color: #121212;
+}
+/* End */
+
+/* Aldaine Section*/
+
+body {
+  /* padding: */
+  margin: 0;
+}
+
+.news-section {
+  background-color: white;
+}
+
+.news-section__article {
+  display: flex;
+  overflow: hidden;
+}
+
+.article__headline {
+  display: flex;
+  width: 12rem;
+  margin-right: 1.2rem;
+  flex-direction: column;
+}
+
+.article__headline h2 {
+  font-size: 20px;
+}
+
+.article__sub_headline h3 {
+  margin-top: 1.1rem;
+}
+
+.article__sub_headline p:nth-child(1) {
+  margin-top: 0.4rem;
+}
+
+.article__sub_headline span:nth-child(1) {
+  color: red;
+}
+
+.article_image {
+  margin-left: 9rem;
+}
+
+.article__img__con img {
+  width: 27rem;
+  height: 16rem;
+}
+
+.news-section__image {
+  overflow: hidden;
+}
+
+.news-section__aside .news-section__content h2 {
+  font-size: 20px;
+}
+.news-section__aside .news-section__image img {
+  width: 12rem;
+}
+.news-section__article2 .news-section__image {
+  overflow: hidden;
+}
+.news-section__article2 .news-section__image img {
+  width: 27rem;
+  height: 15rem;
+}
+
+.news-section__article2 .news-section__content2 h2 {
+  margin-bottom: 6rem;
+}
+
+.news-section__across {
+  display: flex;
+  margin-top: 1.5rem;
+}
+
+.news-section__across p {
+  width: 115px;
+  padding-right: 10px;
+}
+.news-section__down {
+  display: flex;
+  flex-direction: column;
+}
+
+.news-section__down .news1 {
+  margin-bottom: 3.5rem;
+}
+
+.news-section__down .news2 {
+  margin-bottom: 4rem;
+  border-top: 1px solid red;
+}
+
+.news-section__down .news1 img {
+  width: 13rem;
+}
+
+.news-section__aside2 .news-section__content {
+  border-top: 1px solid red;
+  width: 10rem;
+  margin-bottom: 1.5rem;
+}
+
+.news-section__aside2 .news-section__content h2 {
+  margin-bottom: 1.3rem;
+  font-size: 18px;
+}
+
+/* Spotlight */
+
+.news-section__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.news-section__column .news-section__flex {
+  display: flex;
+  margin-bottom: 0.8rem;
+}
+
+.column-image img {
+  width: 12rem;
+}
+
+.news-section__column .column-text {
+  position: relative;
+}
+
+.news-section__column .column-text h2 {
+  font-size: 18px;
+  margin-left: 0.8rem;
+  width: 12rem;
+}
+
+.news-section__slide .down-image {
+  margin-bottom: 10rem;
+}
+
+.news-section__slide .down-image h2 {
+  font-size: 19px;
+}
+.news-section__slide .down-image img {
+  width: 13rem;
+}
+
+.news-section__slide .column-text-down {
+  position: relative;
+  width: 10rem;
+  font-size: 16px;
+}
+
+.news-virus .virus-head {
+  width: 30rem;
+  margin-bottom: 13.3rem;
+}
+
+.virus-head h2 {
+  margin-bottom: 0.4rem;
+}
+
+.virus-image {
+  background-image: url("/images/icegirls.jpg");
+  background-position: center;
+  width: 41.5rem;
+  height: 25rem;
+  display: flex;
+}
+
+.virus-image div {
+  background-color: #05296283;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  width: 12rem;
+  margin-left: 1.5rem;
+  margin-top: 16rem;
+  height: 8rem;
+}
+
+.virus-image p {
+  color: white;
+}
+
+.virus-study {
+  display: flex;
+  flex-direction: column;
+}
+
+.virus-study .vac_image img {
+  width: 18rem;
+  height: 12rem;
+}
+
+.virus-study .vac {
+  background-color: #052962;
+  width: fit-content;
+}
+
+.virus-study .vac-text {
+  width: 10rem;
+  color: white;
+}
+
+.virus-study .sub-text {
+  margin-top: 2rem;
+  width: 10rem;
+  color: white;
+}
+
+.virus-study .science {
+  margin-top: 0.9rem;
+  background-color: #052962;
+  width: 18rem;
+}
+
+.virus-study .science h3 {
+  color: white;
+  width: 10rem;
+}
+
+.virus-study .bonus {
+  margin-top: 0.9rem;
+  background-color: #052962;
+  width: 18rem;
+}
+
+.virus-study .bonus h3 {
+  color: white;
+  width: 10rem;
+}
+
+/* opinion */
+.section__op-image img {
+  width: 27rem;
+  height: 14rem;
+}
+.section__op-image2 img {
+  width: 13rem;
+  height: 8rem;
+}
+/* Sports */
+.news_sports .news_sports_image img {
+  width: 27rem;
+}
+
+.news_sports_subtext {
+  margin-top: 4rem;
+  display: flex;
+}
+
+.news-section__focus {
+  display: flex;
+  justify-content: space-between;
+}
+
+.article__focus__con img {
+  width: 20rem;
+  height: 16rem;
+}
+
+.news-section__focus .article__Focus h2 {
+  margin-left: 1.2rem;
+}
+
+.article__Focus .sub {
+  margin-top: 12rem;
+  margin-left: 1.2rem;
+}
+.climate-crisis .crisis-image img {
+  width: 14rem;
+}
+
+.climate-crisis .climate-text {
+  width: 9rem;
+  margin-bottom: 8rem;
+}
+
+.crisis-column .climate-text {
+  margin-bottom: 0.8rem;
+}
+
+.news-section__body {
+  padding: 10px 0;
+  display: grid;
+  gap: 10px;
+}
+.news-section__slice:first-child {
+  padding-right: 0;
+}
+.news-section__head.vertical-rule {
+  position: relative;
+  font-size: 1.1em;
+}
+.news-section__head.vertical-rule::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  border-right: 1px solid var(--muted-grey);
+  right: 0;
+  top: 0;
+}
+
+/* Define each row of the news section, works in conjunction with the grid- utility classes*/
+.news-section__row {
+  display: grid;
+}
+.news-section__item {
+  overflow: hidden;
+  padding: 0 10px;
+  position: relative;
+}
+/* Each Individual news report */
+.ns-item__container {
+  position: relative;
+}
+.ns-item__container::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  border-top: 1px solid red;
+  z-index: 3;
+}
+.ns-item__media {
+}
+.ns-item__content {
+}
+.news-section__item::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  border-right: 1px solid var(--muted-grey);
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+/* Gives the line separator to the right of the row item */
+.news-section__row .news-section__item:last-child:after {
+  display: none;
+}
+.news-section__hide p {
+  margin: 0;
+  text-align: end;
+  color: grey;
+}
+.news-section__hide:hover p {
+  color: black;
+}
+.news-section__head h2 {
+  margin: 0 auto;
+  color: #121212;
+}
+.news-section__head a {
+  text-decoration: none #121212;
+}
+.news-section__head:hover {
+  text-decoration: underline;
+}
+
+.line-separator {
+  position: relative;
+  border: 1px solid var(--muted-grey);
+  border-bottom: 0;
+  border-top: 0;
+}
+.line-separator::after {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    #dcdcdc,
+    #dcdcdc 0.0625rem,
+    transparent 0.0625rem,
+    transparent 0.25rem
+  );
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-size: 0.0625rem 0.8125rem;
+  background-color: #ffffff;
+  content: "";
+  display: block;
+  height: 0.8125rem;
+  width: 100%;
+}
+
+.show {
+  display: flex;
+  margin-left: 10px;
+  border-radius: 50px;
+  border: 1px solid #121212;
+  align-items: center;
+  background-color: #121212;
+  color: white;
+  gap: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+.show .btn-text {
+  font-weight: bold;
+}
+
+/* UTILITIES */
+
+.red {
+  background-color: red;
+  height: 300px;
+  width: 100%;
+}
+.green {
+  background-color: green;
+  height: 300px;
+  width: 100%;
+}
+.blue {
+  background-color: blue;
+  height: 300px;
+  width: 100%;
+}
+.orange {
+  background-color: orange;
+  height: 300px;
+  width: 100%;
+}
+
+.high-blue {
+  color: rgb(0, 110, 255);
+}
+
+.high-red {
+  color: red;
+}
+
+.high-pink {
+  color: pink;
+}
+
+.high-purple {
+  color: purple;
+}
+
+.high-gold {
+  color: goldenrod;
+}
+.high-orange {
+  color: orange;
+}
+
+.bor-gold {
+  border-top: 1px solid goldenrod;
+}
+
+.bor-red {
+  border-top: 1px solid red;
+}
+
+.bor-pink {
+  border-top: 1px solid pink;
+}
+
+.bor-purple {
+  border-top: 1px solid purple;
+}
+
+.bor-orange {
+  border-top: 1px solid orange;
+}
+
+.bor-blue {
+  border-top: 1px solid rgb(0, 110, 255);
+}
+
+.comment {
+  position: absolute;
+  left: 11rem;
+  top: 7rem;
+}
+
+.newspaper {
+  background-color: #b8cdd1;
+  height: 300px;
+  width: 100%;
+}
+
+/* Tells the amount of columns each row should have */
+.col-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.col-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.col-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Tells the grid that the item it is attached to must span the amount of column specified */
+.span-col-2 {
+  grid-column: 1 / span 2; /* or grid-column: 1/ span 2*/
+}
+.span-col-3 {
+  grid-column: 1 / span 3;
+}
+.grid-start-2 {
+  grid-column-start: 2;
+}
+
+.grid-start-3 {
+  grid-column-start: 3;
+}
