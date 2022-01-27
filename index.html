@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="theGuardian">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opinions</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="main.css">
+
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <script src="vendor/angular.min.js"></script>
+    <script src="vendor/angular-route.min.js"></script>
+</head>
+<body ng-controller="mainController">
+    <header ng-include="'views/~header.html'"></header>
+    <main ng-view></main>
+    <footer ng-include="'views/~footer.html'"></footer>
+
+    <script src="app.module.js"></script>
+    
+</body>
+</html>

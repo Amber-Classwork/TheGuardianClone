@@ -1,0 +1,2 @@
+(window.commercialJsonp=window.commercialJsonp||[]).push([[0],{84:function(n,t,e){"use strict";!function(n,t,e,i,s,c,o){function a(e,i){t[n]._Q.push([e,i])}t[n]||(t[n]={init:function(){a("i",arguments)},fetchBids:function(){a("f",arguments)},setDisplayBids:function(){},targetingKeys:function(){return[]},_Q:[]},(c=e.createElement(i)).async=!0,c.src="//c.amazon-adsystem.com/aax2/apstag.js",(o=e.getElementsByTagName(i)[0]).parentNode.insertBefore(c,o))}("apstag",window,document,"script")}}]);
+//# sourceMappingURL=graun.a9.commercial.js.map
